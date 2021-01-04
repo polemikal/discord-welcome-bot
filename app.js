@@ -38,7 +38,7 @@ Voice.on("ready", async() => {
         Voice.voiceConnection = connection;
         Voice.channelID = Channels[index].id;
         Voice.log("The audio file is playing now...")
-        if(!Channels[index].hasStaff()) playVoice(Voice);
+        if(!Channel.hasStaff()) playVoice(Voice);
         else Voice.staffJoined = true;
 
     }).catch(err => {

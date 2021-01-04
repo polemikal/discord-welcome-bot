@@ -13,6 +13,6 @@ A great intro sounds for Discord servers!
 
 #📞 Contact
 
-(!) If there is something that can be added to this project or if you have found anything missing in this project, you can let us know and help us improve the project! [Let us know!](https://github.com/polemikal/discord-slash-commands-bot/issues)
+**(!)** If there is something that can be added to this project or if you have found anything missing in this project, you can let us know and help us improve the project! [Let us know!](https://github.com/polemikal/discord-slash-commands-bot/issues)
 
 **Discord:** polemikal#1221

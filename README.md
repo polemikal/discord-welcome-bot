@@ -1,6 +1,6 @@
 # discord-welcome-bot
 
-A great intro sound for Discord servers!
+A great intro sounds for Discord servers!
 
 # Setup the Project
 

@@ -7,6 +7,8 @@ const moment = require("moment");
 require("moment-duration-format");
 
 const Voice = new Client({ fetchAllMembers: true, disableMentions: "none", ws: { intents: ["GUILDS", "GUILD_VOICE_STATES", "GUILD_MESSAGES"] }});
+Voice.staffJoined = false;
+Voice.playingVoice = false;
 Voice.voiceConnection = null;
 Voice.channelID = null;
 
@@ -68,6 +70,11 @@ Voice.on("voiceStateUpdate", async(oldState, newState) => {
         Voice.staffJoined = false;
         return playVoice(Voice);
     }
+});
+
+Voice.login(CONFIG.TOKEN).catch(err => {
+    Voice.error("An occured error while connecting to Voice client: " + err.message);
+    return Voice.destroy();
 });
 
 /**

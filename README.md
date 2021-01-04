@@ -11,7 +11,7 @@ A great intro sounds for Discord servers!
 
 **(!) DO NOT FORGET** You must install **FFMPEG** on your system to run.
 
-#📞 Contact
+# Contact
 
 **(!)** If there is something that can be added to this project or if you have found anything missing in this project, you can let us know and help us improve the project! [Let us know!](https://github.com/polemikal/discord-slash-commands-bot/issues)
 

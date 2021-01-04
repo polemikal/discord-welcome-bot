@@ -6,7 +6,7 @@ const CONFIG = JSON.parse(fs.readFileSync("./config.json", { encoding: "utf-8" }
 const moment = require("moment");
 require("moment-duration-format");
 
-const Voice = new Client({ fetchAllMembers: true, disableMentions: "none", ws: { intents: ["GUILDS", "GUILD_VOICE_STATES", "GUILD_MESSAGES"] }});
+const Voice = new Client({ fetchAllMembers: true, disableMentions: "none" });
 Voice.staffJoined = false;
 Voice.playingVoice = false;
 Voice.voiceConnection = null;
@@ -82,7 +82,6 @@ Voice.login(CONFIG.TOKEN).catch(err => {
  * @param {Client} Voice 
  */
 function playVoice(Voice) {
-    if(stop === true) return;
     try {
 
         const Path = Voice.staffJoined === true ? "./" + CONFIG.FILES.STAFF : "./" + CONFIG.FILES.WELCOME;

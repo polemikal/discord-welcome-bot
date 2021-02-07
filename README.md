@@ -17,10 +17,6 @@ A great intro sounds for Discord servers!
 
 **(!)** This project is shared on behalf of [Serendia Squad](https://discord.com/invite/serendia). If you need any help about this project, you can join this platform and ask questions in your mind.
 
-# Contact
-
-**Discord:** polemikal#6935
-
 
 
 
